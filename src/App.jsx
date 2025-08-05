@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { FaChevronUp } from "react-icons/fa";
+import { CgProfile } from "react-icons/cg";
 
 function App() {
   const Home = useRef();
@@ -21,10 +22,9 @@ function App() {
             <div className='cursor-pointer p-2' onClick={()=>{Publications.current?.scrollIntoView({ behavior: 'smooth' });}} >Publications</div>
             <div className='cursor-pointer p-2' onClick={()=>{Blogs.current?.scrollIntoView({ behavior: 'smooth' });}} >Blog</div>
           </div>
-          home
           <div className='Data'>
             <div className='Image'>
-
+              <CgProfile className=' max-w-60 max-h-60 w-full h-full p-1 rounded-full bg-black' />
             </div>
             <div className='Info'>
 
